@@ -1,5 +1,5 @@
-export const sections = ["overview", "mining", "start", "factories", "rarity", "burn", "prices", "rewards", "trading", "buybacks", "privacy"];
-export const copy = {
+export const sections = ["overview", "mining", "start", "factories", "rarity", "burn", "prices", "rewards", "trading", "buybacks", "contracts", "privacy"];
+export const copy = { "contracts": ["Smart contracts", "Explore the published contract addresses and public source code for ArcFoundry."],
   "title": "ArcFoundry Docs",
   "intro": "Mine a planetary factory on Arc. Hold it for funded USDC rent or permanently burn it for SCRAP.",
   "status": "Mainnet edition. Before deployment, only a device benchmark is available. No guaranteed return.",

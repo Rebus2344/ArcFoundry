@@ -1,0 +1,21 @@
+{
+  "WORLD": 0,
+  "SKY": 8,
+  "HORIZON": 16,
+  "MOONS": 24,
+  "ATMOSPHERE": 28,
+  "SATELLITE": 32,
+  "LIGHTS": 36,
+  "PIPES": 40,
+  "MARKERS": 44,
+  "WORLD_NAME": 48,
+  "SKY_NAME": 56,
+  "MATERIAL_NAME": 64,
+  "POWER_NAME": 72,
+  "WORLD_STYLE": 80,
+  "METAL_STYLE": 88,
+  "POWER_STYLE": 96,
+  "CONSTANT_STYLE": 104,
+  "STARS": 105,
+  "GROUND": 106
+}

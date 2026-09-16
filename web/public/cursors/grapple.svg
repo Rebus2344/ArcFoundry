@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32">
+  <defs>
+    <linearGradient id="steel" x1="5" y1="3" x2="27" y2="29" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#f7fbff"/>
+      <stop offset=".38" stop-color="#aeb8c2"/>
+      <stop offset=".72" stop-color="#68727c"/>
+      <stop offset="1" stop-color="#dce3e8"/>
+    </linearGradient>
+    <linearGradient id="dark" x1="12" y1="6" x2="20" y2="18" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#aeb7bf"/>
+      <stop offset="1" stop-color="#3d454d"/>
+    </linearGradient>
+  </defs>
+  <g stroke="#090b0e" stroke-width="2" stroke-linejoin="round">
+    <path fill="url(#steel)" d="M13 1h6v6l4 3v5l-3 3h-8l-3-3v-5l4-3z"/>
+    <path fill="url(#dark)" d="M13 7h6l4 3-3 5h-8l-3-5z"/>
+    <path fill="url(#steel)" d="M10 12 5 14 2 19l1 8 3-2 1-6 5-3z"/>
+    <path fill="url(#steel)" d="m22 12 5 2 3 5-1 8-3-2-1-6-5-3z"/>
+    <path fill="url(#steel)" d="m13 16-4 5v7l3 3 2-3-1-6 3-4z"/>
+    <path fill="url(#steel)" d="m19 16 4 5v7l-3 3-2-3 1-6-3-4z"/>
+  </g>
+  <g fill="#eef4f7" stroke="#252b31" stroke-width="1">
+    <circle cx="11" cy="13" r="1.5"/><circle cx="21" cy="13" r="1.5"/>
+    <circle cx="13" cy="17" r="1.25"/><circle cx="19" cy="17" r="1.25"/>
+  </g>
+  <path d="M14 3h3" stroke="#fff" stroke-width="1.25" stroke-linecap="round"/>
+</svg>

@@ -1,0 +1,49 @@
+.collectible-card,.nft-art-frame,.pack-preview{--card-edge:#9aa2ad;--card-glow:transparent;--foil-opacity:0;--foil-hue:0deg}
+[data-rarity=Uncommon]{--card-edge:#e9eef7;--card-glow:transparent}
+[data-rarity=Rare]{--card-edge:#56b8ff;--card-glow:#4eb5ff77;--foil-opacity:.28;--foil-hue:0deg}
+[data-rarity=Epic]{--card-edge:#bf8dff;--card-glow:#aa70ff9c;--foil-opacity:.48;--foil-hue:36deg}
+[data-rarity=Legendary]{--card-edge:#ffc66c;--card-glow:#ffb359b3;--foil-opacity:.68;--foil-hue:90deg}
+
+.nft-card.collectible-card,.factory-samples .collectible-sample,.nft-art-frame{position:relative;isolation:isolate;min-width:0;overflow:visible;border:3px solid var(--card-edge);border-bottom-width:8px;border-radius:12px;background:linear-gradient(155deg,#2b2933,#111117 58%,#201d26);box-shadow:inset 0 0 0 3px #ffffff19,0 7px 0 #060509,0 16px 30px #0009,0 0 16px var(--card-glow);transition:transform .24s ease,box-shadow .24s ease}
+.nft-card.collectible-card:hover,.nft-card.collectible-card:focus-visible{transform:translateY(-5px);box-shadow:inset 0 0 0 3px #ffffff28,0 11px 0 #060509,0 24px 34px #000b,0 0 28px var(--card-glow)}
+.collectible-card[data-rarity=Epic],.nft-art-frame[data-rarity=Epic],.pack-preview[data-rarity=Epic]{box-shadow:inset 0 0 0 3px #ffffff20,0 7px 0 #060509,0 14px 32px #0009,0 0 18px #a772ff80,0 0 38px #6b56ff55}
+.collectible-card[data-rarity=Legendary],.nft-art-frame[data-rarity=Legendary],.pack-preview[data-rarity=Legendary]{box-shadow:inset 0 0 0 3px #fff6d24d,0 7px 0 #060509,0 16px 34px #0009,0 0 20px #ffc368a8,0 0 52px #f68f6b80}
+.nft-card.collectible-card[data-rarity=Epic]:hover,.nft-card.collectible-card[data-rarity=Epic]:focus-visible{box-shadow:inset 0 0 0 3px #ffffff30,0 11px 0 #060509,0 24px 42px #000b,0 0 28px #ae86ffbb,0 0 56px #725dff77}
+.nft-card.collectible-card[data-rarity=Legendary]:hover,.nft-card.collectible-card[data-rarity=Legendary]:focus-visible{box-shadow:inset 0 0 0 3px #fff6d267,0 11px 0 #060509,0 24px 42px #000b,0 0 35px #ffcd82d9,0 0 72px #f68f6bb3}
+
+.collectible-art{position:relative;overflow:hidden;isolation:isolate;background:#11131c}
+.nft-card .collectible-art img,.factory-samples .collectible-art img,.nft-art-frame .collectible-art img,.pack-preview .collectible-art img{display:block;width:100%;height:auto;aspect-ratio:512/584;object-fit:contain;image-rendering:pixelated}
+.collectible-art::after{content:"";pointer-events:none;position:absolute;inset:0;border:4px solid #ffffff24;box-shadow:inset 0 0 0 3px #06070b9e,inset 0 -14px 32px #06060a9e}
+.collectible-foil{pointer-events:none;position:absolute;inset:-20%;z-index:1;opacity:var(--foil-opacity);mix-blend-mode:screen;background:repeating-linear-gradient(118deg,transparent 0 16%,#8ee8ffb0 20%,#ffe99baa 22%,#db9bffb0 25%,transparent 31% 49%);filter:hue-rotate(var(--foil-hue)) saturate(1.4);transform:translateX(-32%) rotate(-9deg);transition:transform .6s ease,opacity .4s ease}
+.collectible-card:hover .collectible-foil,.collectible-card:focus-visible .collectible-foil,.pack-preview:hover .collectible-foil,.nft-art-frame:hover .collectible-foil{transform:translateX(19%) rotate(-9deg);opacity:min(1,calc(var(--foil-opacity) + .14))}
+.collectible-card[data-rarity=Rare] .collectible-art,.nft-art-frame[data-rarity=Rare] .collectible-art,.pack-preview[data-rarity=Rare] .collectible-art{box-shadow:inset 0 0 28px #52baff55}
+.collectible-card[data-rarity=Epic] .collectible-art,.nft-art-frame[data-rarity=Epic] .collectible-art,.pack-preview[data-rarity=Epic] .collectible-art{box-shadow:inset 0 0 34px #a678ff77}
+.collectible-card[data-rarity=Legendary] .collectible-art,.nft-art-frame[data-rarity=Legendary] .collectible-art,.pack-preview[data-rarity=Legendary] .collectible-art{box-shadow:inset 0 0 40px #ffcf827e}
+
+.collectible-meta{padding:14px 16px 16px;background:linear-gradient(140deg,#24212b,#121218);border-top:1px solid #ffffff32}
+.collectible-topline{display:flex;justify-content:space-between;gap:8px;color:#bdb5c8;font:400 12px/1.3 var(--mono);letter-spacing:.08em;text-transform:uppercase}
+.collectible-topline span:last-child{color:var(--card-edge)}
+.nft-card.collectible-card h3,.factory-samples .collectible-sample h3{margin:10px 0 12px;font:400 clamp(22px,2vw,29px)/1.1 var(--pixel);color:#f4eff9;text-transform:uppercase;overflow-wrap:anywhere}
+.factory-samples .collectible-sample p{margin:0 0 12px;color:#aaa3b5;font:400 12px/1.5 var(--mono)}
+.collectible-footer{display:flex;justify-content:space-between;align-items:center;gap:10px;padding:8px 10px;background:linear-gradient(90deg,var(--card-edge),#ffffff24 48%,#26242e);color:#0a0a0e;font:700 17px/1.2 var(--pixel);letter-spacing:.06em;text-transform:uppercase}
+.collectible-footer strong{color:#101017;font-weight:700}
+.collectible-footer span{color:#f5f0f9;text-shadow:0 1px 3px #050509;font:400 12px/1 var(--mono);white-space:nowrap}
+.nft-card.collectible-card .card-rent{margin:11px 0 0;padding:0;color:#c5e9a2;font:400 12px/1.4 var(--mono)}
+.nft-art-frame{align-self:start;position:sticky;top:calc(var(--header-height) + 24px);padding:10px;max-width:540px;width:100%}
+.nft-art-frame .collectible-topline{padding:3px 4px 10px}
+.nft-art-frame .collectible-footer{margin-top:10px;font-size:23px;padding:10px 16px}
+.nft-art-frame .nft-image{border:0;box-shadow:none;border-radius:0}
+.pack-preview[data-rarity=Rare]{border-color:#56b8ff;box-shadow:inset 0 0 0 3px #ffffff20,0 7px 0 #060509,0 0 20px #4eb5ff77}
+.pack-preview[data-rarity=Epic]{border-color:#bf8dff}
+.pack-preview[data-rarity=Legendary]{border-color:#ffc66c}
+.pack-preview .collectible-art::after{border-width:3px}
+
+@media(max-width:760px){.nft-art-frame{position:static;margin:0 auto 12px}}
+@media(max-width:600px){.nft-card .collectible-meta{padding:9px 9px 11px}.nft-card .collectible-topline{font-size:8px;letter-spacing:0}.nft-card .collectible-topline span:first-child{white-space:nowrap}.nft-card.collectible-card h3{font-size:19px;margin:8px 0}.nft-card .collectible-footer{font-size:14px;padding:7px}.nft-card .collectible-footer span{font-size:9px}.nft-card.collectible-card .card-rent{font-size:10px}.nft-art-frame .collectible-footer{font-size:19px}}
+@media(prefers-reduced-motion:reduce){.collectible-card,.collectible-foil{transition:none!important}.collectible-card:hover .collectible-foil,.collectible-card:focus-visible .collectible-foil,.pack-preview:hover .collectible-foil,.nft-art-frame:hover .collectible-foil{transform:none}}
+.collectible-foil{opacity:0}
+.work-portrait[data-rarity=Rare] img{box-shadow:0 0 12px #4eb5ff66}
+.work-portrait[data-rarity=Epic] img{box-shadow:0 0 16px #aa70ff88}
+.work-portrait[data-rarity=Legendary] img{box-shadow:0 0 22px #ffb359aa}
+.portrait-rarity{display:block;font-size:inherit;font-weight:700}
+.work-history .history-rarity{display:block;font-size:11px;line-height:1.4}

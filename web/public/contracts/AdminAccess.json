@@ -1,0 +1,1 @@
+{"abi":[{"inputs":[],"name":"InvalidRecipient","type":"error"},{"inputs":[],"name":"ReentrancyGuardReentrantCall","type":"error"},{"inputs":[],"name":"UnauthorizedOwner","type":"error"},{"inputs":[],"name":"owner","outputs":[{"internalType":"address","name":"","type":"address"}],"stateMutability":"view","type":"function"}]}

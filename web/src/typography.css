@@ -1,0 +1,61 @@
+@font-face{font-family:"Jersey 10";src:url('/fonts/jersey-10-latin-400.woff2') format('woff2');font-style:normal;font-weight:400;font-display:swap}
+@font-face{font-family:DotGothic16;src:url('/fonts/dotgothic16-latin-400.woff2') format('woff2');font-style:normal;font-weight:400;font-display:swap}
+@font-face{font-family:VT323;src:url('/fonts/vt323-latin-400.woff2') format('woff2');font-style:normal;font-weight:400;font-display:swap}
+:root{--pixel:"Jersey 10","Courier New",monospace;--mono:VT323,"Courier New",monospace;--reading-font:DotGothic16,"Courier New",monospace;font-family:var(--reading-font);font-synthesis:none}
+body{font-family:var(--reading-font)}
+.hero-text{font-family:var(--reading-font)}
+h1,h2,h3,h4,button,.button,.brand,.eyebrow,.tag,.header-status,.hero-note,.text-link,.countdown-label .eyebrow,.arcade-hero .countdown-label .eyebrow,.mining-controls legend,.docs-content .eyebrow{font-weight:400}
+.page-heading h1,.document h1,.nft-detail h1{font-weight:400}
+button,.button{font-size:22px;letter-spacing:.03em}
+.brand{font-size:36px;letter-spacing:0}
+.site-header nav a{font-size:22px;font-weight:400;letter-spacing:.04em}
+.header-status{font-size:18px}.header-status small{font-size:14px}
+.wallet button,.wallet .button{font-size:20px}
+.wallet-account small{font-size:18px}
+.eyebrow,.page-heading .eyebrow,.docs-content .eyebrow{font-size:18px;letter-spacing:.06em}
+.hero-note{font-size:16px}
+.countdown-label .eyebrow,.arcade-hero .countdown-label .eyebrow{font:400 18px/1.3 var(--pixel)}
+.countdown time{font-size:14px}
+.countdown-digits strong{font:400 48px/1 var(--mono);font-variant-numeric:tabular-nums}
+.countdown-digits span{font-size:14px}
+.hashrate{font:400 clamp(52px,6vw,78px)/1 var(--mono);font-variant-numeric:tabular-nums}
+.hashrate small{font:400 28px/1 var(--mono)}
+.mint-price strong,.swap-output strong,.rent-summary strong,.pool-progress strong,.arcade-stats strong,.stats-grid .panel strong,.model-result>strong{font-family:var(--mono);font-weight:400}
+.metrics strong,.stats-grid .panel strong{font:400 30px/1.25 var(--mono)}
+.quote-details dd{font-size:22px}
+label,.trait-grid strong,.docs-content th,.docs-pager a,.docs-mobile-nav summary,.status-pill{font-weight:400}
+input,select{font-family:var(--reading-font)}
+.mining-controls fieldset select{font-size:16px}
+input[type=number]{font-family:var(--mono);font-size:24px}
+code,pre,.docs-formula,.owner-address code{font-family:var(--mono);font-size:21px;line-height:1.45}
+.mining-controls legend{font-size:24px}
+.mining-setting-label output{font:400 22px/1.2 var(--mono)}
+.range-endpoints{font:400 18px/1.2 var(--mono)}
+.mining-settings .hardware-help,.mining-settings .gpu-device p{font:400 14px/1.6 var(--reading-font)}
+.gpu-device strong{font:400 16px/1.5 var(--reading-font)}
+.mining-settings .gpu-retry{font:400 18px/1.4 var(--pixel)}
+.wallet-dialog,.wallet-popover{font-family:var(--reading-font)}
+.wallet-dialog h2{font:400 32px/1.2 var(--pixel);letter-spacing:0}
+.wallet-dialog p,.wallet-dialog button,.wallet-dialog a,.wallet-dialog small,.wallet-dialog .wallet-list-title,.site-header .wallet .wallet-popover a,.site-header .wallet .wallet-popover button{font-family:var(--reading-font);font-weight:400}
+.wallet-dialog .wallet-eyebrow{font:400 18px/1.3 var(--pixel)}
+.wallet-dialog .wallet-list-title{font-size:14px}
+.wallet-dialog small,.wallet-dialog .wallet-footnote{font-size:13px}
+.wallet-popover code{font-size:20px}
+.wallet-badge{font-family:var(--pixel);font-weight:400;font-size:20px}
+.site-footer .brand{font-size:36px}
+.footer-network,.footer-bottom,.frame-title{font-family:var(--pixel);font-weight:400;font-size:18px}
+.footer-links a{font-size:16px}
+@media(max-width:760px){
+ .brand,.site-footer .brand{font-size:32px}.site-header nav a{font-size:20px}
+ .wallet button,.wallet .button{font-size:18px}.wallet-account small{font-size:16px}
+ .countdown-digits strong{font-size:40px}.countdown-digits span{font-size:12px}
+ .metrics strong,.stats-grid .panel strong{font-size:26px}
+ .solution-actions .primary,.trade-tabs button{font-size:22px}
+ .docs-formula{font-size:19px}.quote-details dd{font-size:20px}
+}
+@media(max-width:370px){
+ .site-header .brand{font-size:28px}.site-header .wallet button,.site-header .wallet .button{font-size:17px}
+ .site-header nav a{font-size:20px}.countdown-digits strong{font-size:36px}
+ .countdown-digits span{font-size:11px}.countdown time{font-size:13px}
+ .metrics strong{font-size:24px}
+}

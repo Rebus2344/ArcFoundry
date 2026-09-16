@@ -1,0 +1,8 @@
+.miner-test-note{padding:14px 16px;border:1px solid #526143;border-radius:8px;background:#20271c;margin:20px 0}
+.miner-test-note strong{color:#dbefc3;font:600 14px/1.5 var(--reading-font)}
+.miner-test-note p{margin:6px 0 0;font:400 14px/1.6 var(--reading-font);color:#c2c4b9}
+.prelaunch-miner .mining-controls>.eyebrow{margin-top:0}
+.test-progress{height:8px;border-radius:4px;background:#3c3645;overflow:hidden;margin:20px 0}
+.test-progress span{display:block;height:100%;background:#c4e99b}
+.test-status{font:400 15px/1.65 var(--reading-font);color:#dbd2e4}
+.test-status.test-error{color:#ffc5cd;overflow-wrap:anywhere}

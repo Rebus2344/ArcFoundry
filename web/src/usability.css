@@ -1,0 +1,221 @@
+:root{--header-height:86px;--reading-size:16px;--reading-font:DotGothic16,"Courier New",monospace}
+html{scroll-padding-top:calc(var(--header-height) + 20px)}
+.site-header{position:sticky;top:0;z-index:100;max-width:none;width:100%;margin:0;padding:14px max(24px,calc((100% - 1316px)/2));min-height:78px;background:#0c0c10;box-shadow:0 8px 20px #0005;isolation:isolate}
+.site-header .brand{flex-shrink:0;min-height:44px}
+.site-header nav a{min-height:44px;display:inline-flex;align-items:center}
+.wallet-account{flex-direction:column;gap:4px;font-size:16px!important}
+.wallet-account small{font:400 10px/1.2 var(--mono);letter-spacing:0;text-transform:none}
+.wallet .button[aria-current=page]{outline:2px solid var(--lime);outline-offset:3px}
+.header-status small{font-size:11px}
+.skip{position:fixed;top:8px;left:12px;z-index:200;transform:translateY(-180%);padding:12px 16px;color:#14200d}
+.skip:focus{transform:translateY(0)}
+main:focus{outline:none}
+main{min-height:55vh}
+main h1,main h2,main [tabindex]{scroll-margin-top:calc(var(--header-height) + 20px)}
+.docs-sidebar{top:calc(var(--header-height) + 20px);max-height:calc(100dvh - var(--header-height) - 40px);overflow-y:auto;padding-right:8px;scrollbar-width:thin}
+.nft-detail>.nft-image{top:calc(var(--header-height) + 24px);height:auto;aspect-ratio:1}
+.page-heading{padding:32px 0 28px;align-items:flex-start}
+.page-heading>div{min-width:0}
+.page-heading h1{margin-bottom:12px}
+.page-heading p{font-size:var(--reading-size);max-width:740px;line-height:1.8}
+.tag{font:400 11px/1.6 var(--mono);white-space:normal;overflow-wrap:anywhere;flex-shrink:0;max-width:100%}
+.panel p,.document p,.token-explainer p,.hero-text,.arcade-steps p,.pack-choices p{font-size:var(--reading-size);line-height:1.85}
+.hero-text{font-size:15px}
+.subtle,.field-hint{font:400 12px/1.8 var(--mono);color:#b1a7bd!important}
+.field-hint{margin:10px 0 18px;max-width:64ch}
+.panel h2{line-height:1.3}
+.section-heading>p,.pool-milestone p,.home-footnote,.pack-caption p,.pack-disclaimer,.footer-about p,.footer-links a{font-size:12px;line-height:1.8}
+.pack-disclaimer{color:#b9afc6}
+.pack-disclaimer a{color:#dfc8f1}
+.frame-title>span:last-child{font-size:12px}
+.pack-caption span,.selector-label,.arcade-stats small,.hero-note{font-size:12px}
+.pack-swatch{min-height:44px}
+.arcade-stats strong{overflow-wrap:normal;word-break:normal;font-size:clamp(24px,2.6vw,36px)}
+.arcade-stats small{display:block;line-height:1.5;color:#b3a5bf}
+.countdown time{font-size:11px}
+.countdown-digits strong{font-variant-numeric:tabular-nums}
+.countdown-digits span{font-size:12px;letter-spacing:0}
+.countdown-digits>div{grid-template-columns:1fr;gap:5px}
+.countdown.compact .countdown-digits>div,main>.countdown .countdown-digits>div{grid-template-columns:1fr}
+.mining-controls fieldset{margin:20px 0 0;padding:18px;border-color:#51465c}
+.mining-controls fieldset label+label{margin-top:18px}
+.mining-controls legend{font:400 18px var(--pixel);padding:0 8px}
+.mining-controls fieldset>.field-hint{margin-top:0}
+.mining-controls .miner-actions{margin-bottom:12px}
+.metrics{grid-template-columns:repeat(2,minmax(0,1fr));gap:24px 18px}
+.metrics>div{min-width:0}
+.metrics strong{font-size:clamp(23px,2.1vw,30px);overflow-wrap:anywhere;line-height:1.35}
+.metrics span{font-size:12px;line-height:1.6}
+.hashrate{font-size:clamp(48px,5.7vw,76px);overflow-wrap:anywhere}
+.message{padding:16px 58px 16px 18px;line-height:1.8;font-size:13px}
+.message button{top:7px;right:7px;width:40px;min-height:40px;height:40px;padding:0;margin:0!important;font:400 26px/1 var(--mono);box-shadow:none;color:inherit}
+.message[role=status]:not(.notice){padding-right:18px}
+.message:not(:has(button)){padding-right:18px}
+.notice{border-color:#61754e;background:#1e281a;color:#d5eac4}
+.row{display:flex;gap:12px;flex-wrap:wrap;align-items:center}
+.panel .row button+button{margin:0}
+input,select{font-size:16px;line-height:1.5}
+input[type=range]{min-height:30px}
+label{font-size:13px}
+button:disabled{opacity:.55}
+.connection-state,.empty{padding:38px 28px;text-align:center}
+.empty h2{font:400 28px/1.25 var(--pixel);margin:0 0 12px;color:var(--text)}
+.empty p{max-width:660px;margin:12px auto 18px;font-size:14px;line-height:1.9;color:#b5abbe}
+.connection-state>a{display:inline-flex;min-height:44px;align-items:center;color:var(--lime);font-size:13px;text-decoration:underline;text-underline-offset:4px}
+.filters{align-items:flex-end;flex-wrap:wrap;gap:14px;margin:0 0 24px}
+.filters label{flex:0 1 260px}
+.filters>span{margin-left:auto;align-self:center;font-size:12px}
+.nft-card h3{font-size:22px;line-height:1.25}
+.nft-card p{font-size:12px;line-height:1.65;overflow-wrap:anywhere}
+.nft-card img{height:auto}
+.nft-card .card-rent{color:var(--mint)}
+.pagination{gap:18px;flex-wrap:wrap}
+.pagination span{font-size:12px}
+.pagination button{min-width:110px}
+.owner-address code{display:block;margin-top:6px;line-height:1.8}
+.trait-grid{grid-template-columns:repeat(2,minmax(0,1fr))}
+.trait-grid strong{overflow-wrap:anywhere}
+.danger{color:#ffd7df;background:#552737;border-color:#bd7186}
+.danger:hover:not(:disabled){background:#713548;border-color:#eda2b6}
+.burn-confirm{padding:20px;border:1px solid #b8667e;background:#2c1822}
+.burn-confirm h2{font-size:26px}
+.explorer-link{display:inline-flex;min-height:48px;align-items:center;margin-top:12px}
+.swap-panel .section-head{align-items:center;gap:14px;flex-wrap:wrap}
+.swap-panel .section-head h2{margin:0;font-size:28px}
+.swap-panel>.primary{width:100%}
+.swap-panel>button:not(.primary){width:100%;margin-left:0}
+.swap-output strong{font-size:38px;line-height:1.3}
+.swap-output span{font-size:12px}
+.quote-details{font-size:13px}
+.quote-details>div{gap:16px;align-items:baseline}
+.quote-details dd{flex-shrink:1;max-width:60%}
+.token-explainer>h2{font-size:30px}
+.token-explainer h3{font-size:25px}
+.token-explainer a{display:inline-flex;align-items:center;min-height:44px;color:var(--lime);font-size:13px}
+.table-scroll{max-width:100%;border:1px solid var(--border);scrollbar-width:thin}
+.table-scroll table{min-width:480px}
+.table-scroll th,.table-scroll td{font-size:13px;white-space:nowrap}
+.table-scroll th{color:var(--violet);background:#211a28}
+.table-scroll tr:nth-child(even){background:#18131e}
+.document .model-result>strong{font-size:clamp(30px,4vw,46px);overflow-wrap:anywhere}
+.document.wide>section{padding-top:0}
+.stats-grid .panel strong{font-size:clamp(24px,2.6vw,32px);line-height:1.3}
+.docs-content p,.docs-content li{font-size:14px;line-height:1.9}
+.docs-content .lead{font-size:16px}
+.docs-content th,.docs-content td{font-size:12px;line-height:1.8}
+.docs-pager a{min-width:0;overflow-wrap:anywhere}
+.docs-pager small,.docs-version,.document p.docs-version{font-size:11px}
+.docs-layout nav a{font-size:12px}
+.docs-mobile-nav summary span{font-size:11px}
+.footer-links a{min-height:44px}
+@media(max-width:1180px){.site-header{gap:22px}.site-header .header-status{display:none}.site-header .wallet{margin-left:auto}}
+@media(max-width:850px){.site-header{padding:10px 24px;min-height:0;flex-wrap:wrap;gap:4px 16px}.site-header .brand{font-size:28px}.site-header nav{order:3;flex-basis:100%;justify-content:space-between;margin:0;gap:20px;padding:0}.site-header nav a{padding:12px 0;min-height:44px}.site-header nav a.active::after{bottom:4px}.site-header .wallet button,.site-header .wallet .button{min-height:42px;padding:10px 14px;font-size:15px}.wallet-account small{font-size:9px}.site-header .brand img{width:30px;height:30px}.docs-layout{gap:28px}.pack-swatches{grid-template-columns:repeat(4,minmax(0,1fr))}.pack-swatch{height:48px;aspect-ratio:auto}.pack-swatch>span{width:38px;height:38px}.pack-caption h2{font-size:28px}}
+@media(max-width:760px){.nft-detail>.nft-image{position:static}.docs-sidebar{display:none}.metrics strong{font-size:28px}.stats-grid .panel strong{font-size:26px}}
+@media(max-width:600px){:root{--reading-size:14px}.site-header{padding:9px 20px;gap:3px 10px}.site-header .brand{font-size:25px}.site-header nav a{font-size:16px;letter-spacing:.04em}.site-header .wallet button,.site-header .wallet .button{font-size:14px;padding:10px 12px}.site-header nav{gap:12px}.page-heading{gap:14px;padding:26px 0 24px}.page-heading h1,.document h1,.empty-detail h1{font-size:36px}.hero-text{font-size:14px}.panel{padding:22px}.pack-preview{max-width:440px}.pack-caption p{font-size:12px}.pack-swatches{grid-template-columns:repeat(4,minmax(0,1fr));gap:8px}.pack-swatch{height:52px;min-height:52px;aspect-ratio:auto}.pack-swatch>span{width:42px;height:42px}.pack-caption h2{font-size:29px}.pack-disclaimer{font-size:12px}.arcade-stats{grid-template-columns:1fr 1fr}.arcade-stats>div{padding:20px 14px}.arcade-stats strong{font-size:25px;overflow-wrap:normal}.arcade-stats small{font-size:11px}.countdown-digits{gap:10px}.countdown-digits strong{font-size:35px}.countdown-digits span{font-size:11px}.countdown time{font-size:11px}.countdown.compact .countdown-digits,main>.countdown .countdown-digits{min-width:0}.frame-title{font-size:14px}.frame-title>span:last-child{font-size:11px}.section-heading h2{font-size:34px}.hero-note{font-size:11px}.row{align-items:stretch}.row>button,.row>.button{flex:1 1 180px}.filters label{flex:1 1 100%}.filters>span{margin:0;flex-basis:100%}.filters button{font-size:16px}.nft-grid{gap:12px}.nft-card h3{font-size:21px}.nft-card p{font-size:11px}.pagination{gap:12px}.pagination button{min-width:0;flex:1;padding:12px 10px;font-size:16px}.pagination span{order:3;flex-basis:100%;text-align:center}.empty,.connection-state{padding:30px 20px}.empty h2{font-size:26px}.empty p{font-size:14px}.swap-output strong{font-size:33px}.swap-panel .section-head h2{font-size:28px}.swap-panel .section-head button{font-size:16px}.docs-content p,.docs-content li{font-size:14px}.docs-content .lead{font-size:16px}.docs-content h1{font-size:34px}.docs-content th,.docs-content td{font-size:12px}.docs-pager{gap:12px}.docs-pager a{font-size:20px;padding:14px 12px}.docs-pager small{font-size:11px}.docs-layout nav a{font-size:12px}.footer-about p,.footer-links a{font-size:12px}.site-footer .footer-bottom{font-size:12px;line-height:1.8}.stats-grid .panel strong{font-size:24px}}
+@media(max-width:370px){.site-header{padding:9px 16px}.site-header .brand{font-size:22px;gap:6px}.site-header .brand img{width:25px;height:25px}.site-header .wallet button,.site-header .wallet .button{font-size:12px;padding:10px 9px}.site-header nav a{font-size:15px}.hero-note{font-size:10px}.arcade-stats{grid-template-columns:1fr}.arcade-stats>div+div{border-left:0;border-top:1px solid #443b4c}.arcade-stats strong{font-size:30px}.countdown{padding:15px 12px}.countdown-digits{gap:8px}.countdown-digits strong{font-size:31px}.countdown-digits>div{padding-right:5px}.metrics{grid-template-columns:1fr 1fr;gap:18px 12px}.metrics strong{font-size:24px}.stats-grid{grid-template-columns:1fr}.pack-caption h2{font-size:26px}.frame-title{gap:6px;font-size:13px}.frame-title>span:last-child{font-size:10px}}
+:root{--reading-size:16px}
+body{font-family:var(--reading-font);font-size:16px}
+.panel p,.document p,.token-explainer p,.hero-text,.arcade-steps p,.pack-choices p,.page-heading p{font-size:16px;line-height:1.75}
+.panel p:not(.eyebrow),.document p:not(.eyebrow),.token-explainer p,.arcade-steps p,.pack-choices p{color:#c3bdcd}
+.hero-text{font-size:18px;line-height:1.8}
+.eyebrow{font-family:var(--pixel)}
+.subtle,.field-hint{font:400 14px/1.65 var(--reading-font);color:#b5adbf!important}
+label{font:600 14px/1.5 var(--reading-font)}
+input,select{font:400 16px/1.5 var(--mono)}
+.field-hint{margin:8px 0 18px;max-width:66ch}
+.page-heading p{margin:0;max-width:66ch}
+.page-heading .eyebrow{font-size:13px;margin-bottom:14px}
+.page-heading>.tag{margin-top:8px;font-family:var(--reading-font);font-size:12px}
+.panel h2,.token-explainer h2{margin-top:0}
+.panel{box-shadow:3px 3px 0 #050508}
+.section-heading>p,.pool-milestone p,.home-footnote,.pack-caption p,.pack-disclaimer,.footer-about p,.footer-links a{font-family:var(--reading-font);font-size:14px;line-height:1.7}
+.pack-disclaimer{margin-bottom:4px}
+.hero-note{font-size:12px}
+.countdown time{font:400 13px/1.5 var(--reading-font)}
+.countdown-digits span{font:400 12px/1.5 var(--reading-font)}
+.status-pill{display:inline-flex;align-items:center;gap:7px;padding:5px 10px;border:1px solid #645272;background:#251e2d;color:#ded0e8;font:500 12px/1.5 var(--reading-font);white-space:nowrap}
+.status-pill:before{content:'';width:6px;height:6px;background:currentColor}
+.search-heading{display:flex;align-items:center;justify-content:space-between;gap:12px;flex-wrap:wrap}
+.search-heading .eyebrow{margin:0}
+.mining-controls fieldset{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px;margin-top:24px;padding:18px 0 0;border:0;border-top:1px solid #41394b}
+.mining-controls fieldset>.field-hint,.mining-controls fieldset>label:last-child{grid-column:1/-1}
+.mining-controls fieldset .field-hint,.mining-controls fieldset label,.mining-controls fieldset label+label{margin:0}
+.mining-controls legend{font-size:20px;padding-left:0}
+.mining-controls .miner-actions{margin-top:22px}
+.metrics strong{font:500 clamp(18px,1.8vw,24px)/1.4 var(--mono);font-variant-numeric:tabular-nums}
+.metrics span{font:400 14px/1.5 var(--reading-font)}
+.mining-live .metrics{border-top:1px solid #41394b;padding-top:24px}
+.solution{display:grid;grid-template-columns:minmax(0,1fr) minmax(240px,.65fr);gap:20px 28px;border-color:#98be75;background:#1c271c;margin:24px 0;scroll-margin-top:calc(var(--header-height) + 20px)}
+.solution:focus{outline:2px solid #b9df93;outline-offset:4px}
+.solution .eyebrow{margin:0 0 10px;color:#b9df93}
+.solution h2{font-size:30px;margin-bottom:12px}
+.solution p{margin-bottom:0}
+.solution-actions{display:flex;flex-direction:column;align-self:center;gap:12px;min-width:0}
+.solution-actions button{width:100%;margin:0!important}
+.quiet-button{background:transparent;box-shadow:none;color:#c8c1cf;border-color:#62596b}
+.solution>details{grid-column:1/-1;background:#152018;border-color:#425742}
+.solution details p{font-size:14px}
+.token-grid{align-items:start;gap:28px}
+.trade-tabs{display:grid;grid-template-columns:1fr 1fr;gap:6px;padding:5px;background:#0e0d12;border:1px solid #443b4e;margin:20px 0 24px}
+.trade-tabs button{min-width:0;margin:0!important;box-shadow:none;background:transparent;border-color:transparent;color:#bdb4c8;padding:12px 8px;font-size:20px}
+.trade-tabs button[aria-pressed=true]{background:#bdde99;border-color:#d0ecb4;color:#182311}
+.trade-tabs button:hover:not(:disabled){border-color:#9fbe81}
+.swap-panel>h2{margin-bottom:0;font-size:30px}
+.swap-panel>label{margin-bottom:8px}
+.swap-output{padding:20px;margin:18px 0;border-color:#3c5140;background:#121c15}
+.swap-output span{font:400 14px/1.5 var(--reading-font)}
+.swap-output strong{font:500 clamp(22px,2.4vw,32px)/1.4 var(--mono);font-variant-numeric:tabular-nums}
+.swap-output p{font-size:14px;line-height:1.6;margin-bottom:0}
+.swap-output.quote-expired{border-color:#85643e;background:#251e15}
+.quote-expired strong{color:#d4c7af}
+.quote-details{font-family:var(--reading-font);font-size:14px}
+.quote-details dd{font-family:var(--mono);font-size:13px}
+.trading-wait h2{font-size:32px;margin:20px 0 14px}
+.trading-wait .button{width:100%;margin-top:10px}
+.trading-wait .text-link{display:flex;align-items:center;justify-content:center;min-height:44px;font-size:14px;margin-top:12px}
+.pool-progress{border-top:1px solid #443b4e;padding-top:24px;margin-top:24px}
+.pool-progress strong{font:400 36px/1.3 var(--pixel);color:#c3e39c}
+.pool-progress small{font:400 14px/1.5 var(--reading-font);color:#bcb2c7}
+.pool-progress .milestone-meter{margin:16px 0 8px}
+.token-explainer>h2{font-size:30px;margin-bottom:20px}
+.token-explainer>.panel{padding:24px}
+.token-explainer h3{margin:0 0 12px}
+.token-explainer p{margin:10px 0}
+.token-explainer a{font-family:var(--reading-font);font-size:14px}
+.filters>span,.pagination span,.nft-card p{font-family:var(--reading-font);font-size:14px}
+.nft-card h3{font-size:23px}
+.nft-card .card-rent{font-size:13px}
+.trait-grid span{font:400 13px/1.4 var(--reading-font)}
+.trait-grid strong{font:600 15px/1.5 var(--reading-font)}
+.nft-detail .back,.back{font-size:14px;min-height:44px;display:inline-flex;align-items:center}
+.owner-address{font-size:14px!important}
+.owner-address code{font:400 12px/1.7 var(--mono)}
+.stats-grid .panel>span{font:400 14px/1.5 var(--reading-font);margin-bottom:14px}
+.stats-grid .panel strong{font:500 clamp(20px,2vw,26px)/1.45 var(--mono)}
+.empty p,.connection-state p{font:400 16px/1.75 var(--reading-font);max-width:58ch}
+.empty h2{font-size:30px}
+.message{font:400 15px/1.7 var(--reading-font)}
+.docs-content p,.docs-content li{font:400 16px/1.75 var(--reading-font);color:#c3bdcd}
+.docs-content .lead,.document .lead{font:400 18px/1.7 var(--reading-font);color:#ddd4e6;margin-bottom:28px}
+.docs-content .eyebrow{font:400 13px/1.5 var(--pixel)}
+.docs-content h1{font-size:clamp(34px,3.3vw,46px)}
+.docs-content h2{font-size:29px;margin-top:36px}
+.docs-content th,.docs-content td,.table-scroll th,.table-scroll td{font:400 14px/1.65 var(--reading-font)}
+.docs-content th{font-weight:600}
+.docs-content .docs-status{font-size:14px;line-height:1.7}
+.docs-content .docs-status a{white-space:normal}
+.docs-layout nav a{font:400 14px/1.5 var(--reading-font)}
+.docs-download,.docs-links a{font:400 14px/1.6 var(--reading-font)}
+.docs-pager a{font:600 17px/1.4 var(--reading-font);overflow-wrap:normal}
+.docs-pager small,.document p.docs-version{font:400 12px/1.6 var(--reading-font)}
+.docs-mobile-nav summary{font:600 14px/1.5 var(--reading-font)}
+.docs-mobile-nav summary span{font:400 12px/1.5 var(--reading-font)}
+@media(max-width:760px){.solution{grid-template-columns:1fr}.solution>details{grid-column:auto}.token-grid{gap:24px}.token-explainer>.panel{padding:22px}}
+@media(max-width:600px){.page-heading .tag{margin-top:0}.hero-text{font-size:17px}.page-heading p{font-size:16px}.mining-controls fieldset{gap:16px 12px}.mining-controls fieldset select{font-size:14px}.metrics strong{font-size:18px}.metrics span{font-size:13px}.trade-tabs button{font-size:19px}.swap-output strong{font-size:24px}.quote-details>div{gap:12px}.quote-details dd{max-width:56%;font-size:12px}.trading-wait h2{font-size:29px}.docs-content h1{font-size:34px}.docs-content h2{font-size:28px}.docs-content th,.docs-content td{font-size:13px}.docs-layout nav a{font-size:14px}.nft-card h3{font-size:21px}.nft-card p{font-size:12px}.nft-card .card-rent{font-size:12px}.stats-grid .panel strong{font-size:19px}.stats-grid .panel>span{font-size:13px}.solution h2{font-size:28px}.solution-actions .primary{font-size:18px;padding:14px 10px}}
+@media(max-width:370px){.mining-controls fieldset{grid-template-columns:1fr}.mining-controls fieldset>.field-hint,.mining-controls fieldset>label:last-child{grid-column:auto}.docs-pager{flex-direction:column}.docs-pager a{max-width:none;width:100%}.solution-actions .primary{font-size:17px}.search-heading{gap:8px}.pool-progress strong{font-size:30px}}
+.token-grid{margin:8px 0 28px}
+.swap-output{container-type:inline-size}
+.swap-output strong{font-size:clamp(12px,calc(100cqw / var(--characters,20) * 1.55),32px);letter-spacing:-.025em}
+main .panel.solution{scroll-margin-top:0}
+.burn-amount{color:#d7b5c4!important;font-size:14px!important}
+.burn-amount strong{display:block;margin-top:6px;font:500 16px/1.6 var(--mono);color:#ffe0eb;overflow-wrap:anywhere}
